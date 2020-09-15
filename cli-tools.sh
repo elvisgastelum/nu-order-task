@@ -17,6 +17,8 @@ function run_image()
       docker run -it --rm \
       -v "$(pwd)":/development \
       -v "$(pwd)/cli-tools.sh":/usr/bin/cli-tools \
+      -v $HOME/.ssh:/root/.ssh \
+      -v $HOME/.gitconfig:/root/.gitconfig \
       -p 3000:3000 \
       --env-file ${env_list} \
       ${docker_image} /bin/bash
@@ -24,6 +26,8 @@ function run_image()
       docker run -it --rm \
       -v "$(pwd)":/development \
       -v "$(pwd)/cli-tools.sh":/usr/bin/cli-tools \
+      -v $HOME/.ssh:/root/.ssh \
+      -v $HOME/.gitconfig:/root/.gitconfig \
       --env-file ${env_list} \
       ${docker_image} /bin/bash
     fi
