@@ -17,7 +17,7 @@ You can watch a live demo of the component in this [link](https://issues.elvisga
 ## CLI Tools
 ### Prerequisites
 >  - Docker
->  - AWS Credencials
+>  - AWS Credentials
 
 First, create a .secrets folder and env.list file
 
