@@ -1,0 +1,15 @@
+aws_access_key = ""
+
+aws_secret_key = ""
+
+website_domain = "issues.elvisgastelum.com"
+
+website_subdomain = "issues"
+
+region = "us-west-1"
+
+website_bucket_name = "issues.elvisgastelum.com"
+
+project_name = "react-issues"
+
+website_zone = "elvisgastelum.com."

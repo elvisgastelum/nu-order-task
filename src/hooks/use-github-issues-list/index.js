@@ -1,0 +1,1 @@
+export { useGithubIssuesList } from './useGithubIssuesList';
