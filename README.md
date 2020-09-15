@@ -1,4 +1,5 @@
-![portada](https://user-images.githubusercontent.com/43228550/88612521-427a0a00-d040-11ea-99aa-0eef6c119e50.png)
+![portada](https://user-images.githubusercontent.com/43228550/93264924-b8574380-f75c-11ea-8efe-27c9af8d1f52.png)
+
 # React Issues List
 [![Demo](https://img.shields.io/badge/demo-website-green)](https://issues.elvisgastelum.com/)
 ![CI/CD](https://github.com/ElvisGastelum/nu-order-task/workflows/CI/CD/badge.svg)
