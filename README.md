@@ -1,8 +1,8 @@
 ![portada](https://user-images.githubusercontent.com/43228550/88612521-427a0a00-d040-11ea-99aa-0eef6c119e50.png)
 # React Issues List
 [![Demo](https://img.shields.io/badge/demo-website-green)](https://issues.elvisgastelum.com/)
-![CI/CD](https://github.com/ElvisGastelum/search-bugs/workflows/CI/CD/badge.svg)
-[![codecov](https://codecov.io/gh/ElvisGastelum/react-issues-list/branch/master/graph/badge.svg)](https://codecov.io/gh/ElvisGastelum/react-issues-list)
+![CI/CD](https://github.com/ElvisGastelum/nu-order-task/workflows/CI/CD/badge.svg)
+[![codecov](https://codecov.io/gh/ElvisGastelum/nu-order-task/branch/master/graph/badge.svg)](https://codecov.io/gh/ElvisGastelum/react-issues-list)
 
 ## Description
 This project is an application with a suggestions input box for searching issues for
