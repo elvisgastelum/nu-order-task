@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SearchItemsList /> component should be change active prop from first to the second suggestion item 1`] = `ReactWrapper {}`;
+
+exports[`Test <SearchItemsList /> component should be have active prop the first suggestion item 1`] = `ReactWrapper {}`;
+
+exports[`Test <SearchItemsList /> component should be have active prop the last suggestion item 1`] = `ReactWrapper {}`;

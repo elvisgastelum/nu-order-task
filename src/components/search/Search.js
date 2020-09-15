@@ -33,11 +33,10 @@ export default function Search({ newSearchResults, searchResults, index, setArro
         <SearchBox>
           <SearchBoxLogo src={githubLogo} alt="github-logo" />
           <SearchInputWrapper>
-            <SearchTitle className="search-title">Search React Issues</SearchTitle>
+            <SearchTitle>Search React Issues</SearchTitle>
             <SearchInput
               type="text"
               placeholder="Search"
-              className="search-input "
               onChange={handleText}
               onKeyDown={handleArrowKeys}
               onFocus={handleFocus}

@@ -4,12 +4,6 @@ exports[`Test <Search /> component should be have a length 3 when search "good f
 
 exports[`Test <Search /> component should be have a length 5 when search "react" label in the input 1`] = `ReactWrapper {}`;
 
-exports[`Test <Search /> component should be have active class the first suggestion item 1`] = `ReactWrapper {}`;
-
-exports[`Test <Search /> component should be have active class the last suggestion item when press key.UP arrow 1`] = `ReactWrapper {}`;
-
-exports[`Test <Search /> component should be have active class the second suggestion item when press key.DOWN arrow 1`] = `ReactWrapper {}`;
-
 exports[`Test <Search /> component should be regenerate html when pass new props 1`] = `ReactWrapper {}`;
 
 exports[`Test <Search /> component should be render 1`] = `ReactWrapper {}`;
