@@ -45,7 +45,7 @@ cli-tools --help
 ```
 ![image](https://user-images.githubusercontent.com/43228550/93242628-f55f0e00-f73b-11ea-9200-55e816cd25c4.png)
 
-To install dependencies and start the project
+To install dependencies
 ```bash
 cli-tools --install-dependencies
 ```
