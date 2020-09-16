@@ -8,11 +8,12 @@ import { searchIssues } from './searchIssues';
  * Create suggestions for a component
  *
  * @param {Array} initialState The initialState represent the initial searchResults
- * @return {[searchResults, newSearchResults, number, setArrowKeys]} Return the searchResults, newSearchResults, index, setArrowKeys for consume
+ * @return {[searchResults, newSearchResults, number, setArrowKeys, error]} Return the searchResults, newSearchResults, index, setArrowKeys, error for consume
  */
 export const useSuggestions = (initialState) => {
-  const list = useGithubIssuesList([]);
   const [searchResults, setSearchResults] = useState(initialState);
+  const [error, setError] = useState(undefined);
+  const list = useGithubIssuesList([], setError);
   const [index, handleArrowKeys] = useArrowKeys(0, handleEnter);
 
   /**
@@ -48,5 +49,5 @@ export const useSuggestions = (initialState) => {
     window.open(itemSelected, '_blank');
   }
 
-  return [searchResults, newSearchResults, index, setArrowKeys];
+  return [searchResults, newSearchResults, index, setArrowKeys, error];
 };

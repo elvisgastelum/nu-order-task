@@ -17,7 +17,7 @@ import githubLogo from './img/github-logo.png';
 /**
  * Render a search component with suggestions
  *
- * @param {{ newSearchResults: (value: string) => void, searchResults: [], index: number, setArrowKeys: (keyCode: number, index?: number) => void, handleFocus: (e: React.FocusEvent<HTMLInputElement>) => void, handleBlur: (e: React.FocusEvent<HTMLInputElement>) => void }} props used for the component
+ * @param {{ newSearchResults: (value: string) => void, searchResults: [], index: number, setArrowKeys: (keyCode: number, index?: number) => void, backgroundActive: (value: boolean) => void }} props used for the component
  * @return {JSX.Element} the JSX.Element
  */
 export default function Search({
