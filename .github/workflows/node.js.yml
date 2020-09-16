@@ -27,9 +27,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Integration test
-      - run: npm ci
-      - run: npm run format
-      - run: npm run lint
+        run: npm ci
+      - name: Formating code
+        run: npm run format
+      - name: Running linter
+        run: npm run lint
       - name: Run the tests and generate coverage report
         run: npm test -- --coverage
       - name: Upload coverage to Codecov
