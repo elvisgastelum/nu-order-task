@@ -36,8 +36,8 @@ export default function Search({
     <SearchContainer>
       <SearchElements>
         <SearchBox>
-          <SearchBoxLogo src={githubLogo} alt="github-logo" />
           <SearchInputWrapper>
+            <SearchBoxLogo src={githubLogo} alt="github-logo" />
             <SearchTitle>Search React Issues</SearchTitle>
             <SearchInput
               type="text"

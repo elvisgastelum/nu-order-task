@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 export const SearchContainer = styled.div`
   height: 100%;
-  margin: auto;
-  /* display: flex;
-  justify-content: center; */
-  /* border-radius: 5px; */
+  width: 90%;
+  margin: 0 auto;
   font-size: 1.2rem;
 
   @media only screen and (max-width: 375px) {
@@ -21,13 +19,14 @@ export const SearchElements = styled.div`
   position: relative;
   top: 5em;
   height: max-content;
-
-  @media only screen and (max-width: 375px) {
-    width: 70%;
-  }
+  margin: auto;
 
   @media only screen and (max-width: 768px) {
     width: 60%;
+  }
+
+  @media only screen and (max-width: 375px) {
+    width: 70%;
   }
 `;
 
@@ -44,25 +43,27 @@ export const SearchBoxLogo = styled.img`
   align-self: flex-end;
   position: relative;
   top: 1em;
+  margin: 0 auto;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 768px) {
     min-height: 4em;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 375px) {
     min-height: 4em;
   }
 `;
 
 export const SearchTitle = styled.h1`
   text-align: center;
-
-  @media only screen and (max-width: 375px) {
-    font-size: 1.5em;
-  }
+  font-size: 1.9em;
 
   @media only screen and (max-width: 768px) {
     font-size: 1.7em;
+  }
+
+  @media only screen and (max-width: 375px) {
+    font-size: 1.4em;
   }
 `;
 
@@ -85,14 +86,14 @@ export const SearchInput = styled.input`
     border-radius: 5px 5px 0 0;
   }
 
-  @media only screen and (max-width: 375px) {
-    line-height: 1.7em;
+  @media only screen and (max-width: 768px) {
+    line-height: 2em;
     font-size: 1rem;
     max-height: 2em;
   }
 
-  @media only screen and (max-width: 768px) {
-    line-height: 2em;
+  @media only screen and (max-width: 375px) {
+    line-height: 1.7em;
     font-size: 1rem;
     max-height: 2em;
   }

@@ -18,11 +18,11 @@ export const SearchItemLink = styled.a`
   display: block;
   padding: 0.5em;
 
-  @media only screen and (max-width: 375px) {
-    font-size: small;
-  }
-
   @media only screen and (max-width: 768px) {
     font-size: medium;
+  }
+
+  @media only screen and (max-width: 375px) {
+    font-size: small;
   }
 `;
