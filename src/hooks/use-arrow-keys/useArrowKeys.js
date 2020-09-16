@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { key } from './key-code';
 
 export const useArrowKeys = (initialState, fn) => {
-  const [ index, setIndex ] = useState(initialState);
+  const [index, setIndex] = useState(initialState);
 
   const handleArrowKeys = (keyCode, length) => {
     length = length - 1;
@@ -17,7 +17,7 @@ export const useArrowKeys = (initialState, fn) => {
         break;
       case key.UP:
         if (index > 0) {
-          setIndex(index - 1)
+          setIndex(index - 1);
           break;
         }
         setIndex(length);
@@ -31,7 +31,7 @@ export const useArrowKeys = (initialState, fn) => {
       default:
         setIndex(0);
     }
-  }
+  };
 
-  return [ index, handleArrowKeys ]
-}
+  return [index, handleArrowKeys];
+};

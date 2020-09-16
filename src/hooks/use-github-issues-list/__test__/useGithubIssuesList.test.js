@@ -3,7 +3,6 @@ import { useGithubIssuesList } from 'hooks/use-github-issues-list';
 
 import { renderHook } from '@testing-library/react-hooks';
 
-
 describe('Testing fetchList function', () => {
   var list;
 
@@ -12,54 +11,43 @@ describe('Testing fetchList function', () => {
   });
 
   test('should be defined', () => {
-    expect(list).toBeDefined()
-  })
+    expect(list).toBeDefined();
+  });
 
   test('should contain correct properties', () => {
-    list.forEach(item => {
-      expect(item).toHaveProperty('title')
-      expect(item).toHaveProperty('labels')
-      expect(item).toHaveProperty('body')
-      expect(item).toHaveProperty('id')
-    })
-  })
-  
-})
+    list.forEach((item) => {
+      expect(item).toHaveProperty('title');
+      expect(item).toHaveProperty('labels');
+      expect(item).toHaveProperty('body');
+      expect(item).toHaveProperty('id');
+    });
+  });
+});
 
 describe('Testing useGithubIssuesList hook', () => {
   beforeEach(() => {
     jest.setTimeout(10000);
   });
 
-  beforeAll(() => {
-
-  })
+  beforeAll(() => {});
 
   test('should be defined', async (done) => {
-    const {
-      result,
-      waitForNextUpdate
-    } = renderHook(() => useGithubIssuesList([]));
+    const { result, waitForNextUpdate } = renderHook(() => useGithubIssuesList([]));
     await waitForNextUpdate();
 
     expect(result.current).toBeDefined();
     done();
-  })
+  });
 
   test('should contain correct properties', async () => {
-    const {
-      result,
-      waitForNextUpdate
-    } = renderHook(() => useGithubIssuesList([]));
+    const { result, waitForNextUpdate } = renderHook(() => useGithubIssuesList([]));
     await waitForNextUpdate();
 
-    result.current.forEach(item => {
-      expect(item).toHaveProperty('title')
-      expect(item).toHaveProperty('labels')
-      expect(item).toHaveProperty('body')
-      expect(item).toHaveProperty('id')
-    })
-  })
-
-  
-})
+    result.current.forEach((item) => {
+      expect(item).toHaveProperty('title');
+      expect(item).toHaveProperty('labels');
+      expect(item).toHaveProperty('body');
+      expect(item).toHaveProperty('id');
+    });
+  });
+});

@@ -6,23 +6,20 @@ import { act } from 'react-dom/test-utils';
 
 import Search from 'components/search';
 import data from './mockData.json';
-import { key } from 'hooks/use-arrow-keys/key-code';
 import { searchIssues } from 'hooks/use-suggestions/searchIssues';
 
 Enzyme.configure({
   adapter: new Adapter(),
-})
+});
 
 describe('Test <Search /> component', () => {
-
   test('should be render', async () => {
-
     var searchResults = [];
-    const newSearchResults = value => {
+    const newSearchResults = (value) => {
       searchResults = searchIssues(value, data);
-    }
+    };
     var index = 0;
-    const setArrowKeys = e => { }
+    const setArrowKeys = (e) => {};
 
     const wrapper = mount(
       <Search
@@ -37,13 +34,12 @@ describe('Test <Search /> component', () => {
   });
 
   test('should be regenerate html when pass new props', async () => {
-
     var searchResults = [];
-    const newSearchResults = value => {
+    const newSearchResults = (value) => {
       searchResults = searchIssues(value, data);
-    }
+    };
     var index = 0;
-    const setArrowKeys = e => { }
+    const setArrowKeys = (e) => {};
 
     const wrapper = mount(
       <Search
@@ -58,15 +54,13 @@ describe('Test <Search /> component', () => {
 
     act(() => {
       wrapper.find('input').simulate('change', { target: { value: 'good' } });
-    })
+    });
 
     act(() => {
       wrapper.setProps({
-        searchResults
-      })
-    })
-
-
+        searchResults,
+      });
+    });
 
     expect(wrapper.html()).not.toBe(initialHTML);
 
@@ -74,13 +68,12 @@ describe('Test <Search /> component', () => {
   });
 
   test('should be have a length 5 when search "react" label in the input', async () => {
-
     var searchResults = [];
-    const newSearchResults = value => {
+    const newSearchResults = (value) => {
       searchResults = searchIssues(value, data);
-    }
+    };
     var index = 0;
-    const setArrowKeys = e => { }
+    const setArrowKeys = (e) => {};
 
     const wrapper = mount(
       <Search
@@ -95,13 +88,13 @@ describe('Test <Search /> component', () => {
 
     act(() => {
       wrapper.find('input').simulate('change', { target: { value: 'react' } });
-    })
+    });
 
     act(() => {
       wrapper.setProps({
-        searchResults
-      })
-    })
+        searchResults,
+      });
+    });
 
     expect(wrapper.html()).not.toBe(initialHTML);
 
@@ -110,13 +103,12 @@ describe('Test <Search /> component', () => {
   });
 
   test('should be have a length 3 when search "good first issue" label in the input', async () => {
-
     var searchResults = [];
-    const newSearchResults = value => {
+    const newSearchResults = (value) => {
       searchResults = searchIssues(value, data);
-    }
+    };
     var index = 0;
-    const setArrowKeys = e => { }
+    const setArrowKeys = (e) => {};
 
     const wrapper = mount(
       <Search
@@ -131,19 +123,17 @@ describe('Test <Search /> component', () => {
 
     act(() => {
       wrapper.find('input').simulate('change', { target: { value: 'good first issue' } });
-    })
+    });
 
     act(() => {
       wrapper.setProps({
-        searchResults
-      })
-    })
+        searchResults,
+      });
+    });
 
     expect(wrapper.html()).not.toBe(initialHTML);
 
     expect(wrapper.find('ul').children().length).toBe(3);
     expect(wrapper).toMatchSnapshot();
   });
-
-})
-
+});

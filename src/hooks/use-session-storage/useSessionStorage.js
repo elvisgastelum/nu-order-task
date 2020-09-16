@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react'
-
+import { useState, useEffect } from 'react';
 
 /**
  * Save to the Session Storage any object
@@ -9,11 +8,11 @@ import { useState, useEffect } from 'react'
  * @return {[ value, setValue ]} Return the list to consume
  */
 export function useSessionStorage(key, val) {
-  const [ value, setValue ] = useState(val || window.sessionStorage.getItem(key));
-  
-  useEffect(() => {
-    window.sessionStorage.setItem(key, value)
-  }, [ value, key ])
+  const [value, setValue] = useState(val || window.sessionStorage.getItem(key));
 
-  return [ value, setValue ]
+  useEffect(() => {
+    window.sessionStorage.setItem(key, value);
+  }, [value, key]);
+
+  return [value, setValue];
 }

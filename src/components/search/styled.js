@@ -11,7 +11,7 @@ export const SearchContainer = styled.div`
   @media only screen and (max-width: 375px) {
     font-size: 16px;
   }
-`
+`;
 
 export const SearchElements = styled.div`
   display: flex;
@@ -29,14 +29,14 @@ export const SearchElements = styled.div`
   @media only screen and (max-width: 768px) {
     width: 60%;
   }
-`
+`;
 
 export const SearchBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-`
+`;
 
 export const SearchBoxLogo = styled.img`
   min-height: 5em;
@@ -52,7 +52,7 @@ export const SearchBoxLogo = styled.img`
   @media only screen and (max-width: 768px) {
     min-height: 4em;
   }
-`
+`;
 
 export const SearchTitle = styled.h1`
   text-align: center;
@@ -64,13 +64,13 @@ export const SearchTitle = styled.h1`
   @media only screen and (max-width: 768px) {
     font-size: 1.7em;
   }
-`
+`;
 
 export const SearchInputWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-`
+`;
 
 export const SearchInput = styled.input`
   border-radius: 5px;
@@ -96,5 +96,4 @@ export const SearchInput = styled.input`
     font-size: 1rem;
     max-height: 2em;
   }
-`
-
+`;

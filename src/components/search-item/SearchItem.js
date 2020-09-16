@@ -2,10 +2,7 @@ import React from 'react';
 
 import { key } from 'hooks/use-arrow-keys/key-code';
 
-import {
-  SearchItemLi,
-  SearchItemLink
-} from 'components/search-item/styled'
+import { SearchItemLi, SearchItemLink } from 'components/search-item/styled';
 
 /**
  * Render item of suggestions
@@ -14,18 +11,13 @@ import {
  * @return {JSX.Element} the JSX.Element
  */
 export default function SearchItem({ item, active, setArrowKeys, index }) {
-
-  const handleMouseEvent = e => setArrowKeys(key.MOUSE_EVENT, index);
+  const handleMouseEvent = (e) => setArrowKeys(key.MOUSE_EVENT, index);
 
   return (
     <SearchItemLi onMouseEnter={handleMouseEvent} active={active}>
-      <SearchItemLink
-        target="_blank"
-        rel="noopener noreferrer"
-        href={item.html_url}
-      >
+      <SearchItemLink target="_blank" rel="noopener noreferrer" href={item.html_url}>
         {item.title}
       </SearchItemLink>
     </SearchItemLi>
-  )
+  );
 }

@@ -1,18 +1,16 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const SearchItemLi = styled.li`
   text-decoration: none;
   width: 100%;
   position: relative;
-  background: ${props => props.active
-    ? `#cdcdce`
-    : `white`};
+  background: ${(props) => (props.active ? `#cdcdce` : `white`)};
   box-sizing: border-box;
 
   :last-child {
     border-radius: 0 0 10px 10px;
   }
-`
+`;
 
 export const SearchItemLink = styled.a`
   text-decoration: none;
@@ -27,4 +25,4 @@ export const SearchItemLink = styled.a`
   @media only screen and (max-width: 768px) {
     font-size: medium;
   }
-`
+`;

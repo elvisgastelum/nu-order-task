@@ -1,10 +1,8 @@
 export function searchIssues(search, itemList) {
-  if (search === '' || itemList === [])
-    return [];
-
+  if (search === '' || itemList === []) return [];
 
   var rx = new RegExp(`([^"]*${search}[^"]*)`, 'gi');
-  const listFiltered = itemList.filter(item => filterResults(item, rx));
+  const listFiltered = itemList.filter((item) => filterResults(item, rx));
   const slicedList = listFiltered.slice(0, 5);
   return slicedList;
 }

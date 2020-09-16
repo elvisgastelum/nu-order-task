@@ -3,4 +3,4 @@ export const key = {
   DOWN: 40,
   ENTER: 13,
   MOUSE_EVENT: -1,
-}
+};
