@@ -44,7 +44,7 @@ To display CLI Tools options
 ```bash
 cli-tools --help
 ```
-![image](https://user-images.githubusercontent.com/43228550/93242628-f55f0e00-f73b-11ea-9200-55e816cd25c4.png)
+![image](https://user-images.githubusercontent.com/43228550/93282305-f6fff480-f782-11ea-960e-32b1b068b9e1.png)
 
 To install dependencies
 ```bash
