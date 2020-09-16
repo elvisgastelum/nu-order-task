@@ -23,7 +23,7 @@ First, create a .secrets folder and env.list file
 
 ![image](https://user-images.githubusercontent.com/43228550/93243781-8d112c00-f73d-11ea-8de1-a825fc5603d3.png)
 
-You must be set this variables
+You must set the variables
 
 ![image](https://user-images.githubusercontent.com/43228550/93244054-f85afe00-f73d-11ea-8cc0-44a0558949ca.png)
 
@@ -57,6 +57,12 @@ To start the project
 cli-tools --start
 ```
 ![image](https://user-images.githubusercontent.com/43228550/93241710-9b117d80-f73a-11ea-9fd5-509dc6dba3c1.png)
+
+To init the terraform project
+```bash
+cli-tools --terraform-init
+```
+![image](https://user-images.githubusercontent.com/43228550/93279251-aafd8180-f77b-11ea-989d-9d176ceb266d.png)
 
 To create terraform plan
 ```bash

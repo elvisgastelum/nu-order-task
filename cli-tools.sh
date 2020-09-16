@@ -73,12 +73,17 @@ function check_terraform_install()
   fi
 }
 
-function plan()
+function terraform_init()
+{
+  terraform init
+}
+
+function terraform_plan()
 {
   terraform plan -out=tfplan
 }
 
-function apply()
+function terraform_apply()
 {
   terraform apply tfplan
 }
@@ -99,6 +104,7 @@ function help()
    echo "             cli-tools -r --port"
    echo "             cli-tools -R --port"
    echo "-R, --build-run            Rebuild ${docker_image} image and run container."
+   echo "    --terraform-init       Init the terraform project. (from container)"
    echo "-p, --terraform-plan       Generate terraform plan. (from container)"
    echo "-a, --terraform-apply      Apply from terraform plan. (from container)"
    echo "-s, --start                Start the development server (from container)"
@@ -132,14 +138,19 @@ case $1 in
     build_image && run_image $2
     exit 0
   ;;
+  --terraform-init)
+    check_terraform_install
+    terraform_init
+    exit 0
+  ;;
   --terraform-plan|-p)
     check_terraform_install
-    plan
+    terraform_plan
     exit 0
   ;;
   --terraform-apply|-a)
     check_terraform_install
-    apply
+    terraform_apply
     exit 0
   ;;
   --start|-s)
