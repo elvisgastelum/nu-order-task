@@ -44,7 +44,7 @@ To display CLI Tools options
 ```bash
 cli-tools --help
 ```
-![image](https://user-images.githubusercontent.com/43228550/93282305-f6fff480-f782-11ea-960e-32b1b068b9e1.png)
+![image](https://user-images.githubusercontent.com/43228550/93284461-a0e18000-f787-11ea-89c6-c4c8d0370c17.png)
 
 To install dependencies
 ```bash
@@ -58,6 +58,12 @@ To start the project
 cli-tools --start
 ```
 ![image](https://user-images.githubusercontent.com/43228550/93241710-9b117d80-f73a-11ea-9fd5-509dc6dba3c1.png)
+
+To start the test suites
+```bash
+cli-tools --test
+```
+![image](https://user-images.githubusercontent.com/43228550/93284368-67107980-f787-11ea-95db-99484b0282b7.png)
 
 To init the terraform project
 ```bash
@@ -76,6 +82,3 @@ To apply the terraform plan
 cli-tools --terraform-apply
 ```
 ![image](https://user-images.githubusercontent.com/43228550/93243388-fa708d00-f73c-11ea-9bd0-5feda81201e6.png)
-
-
-

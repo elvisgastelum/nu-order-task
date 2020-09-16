@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const SearchContainer = styled.div`
   height: 100%;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
+  margin: auto;
+  /* display: flex;
+  justify-content: center; */
+  /* border-radius: 5px; */
   font-size: 1.2rem;
 
   @media only screen and (max-width: 375px) {

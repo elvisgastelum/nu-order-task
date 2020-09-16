@@ -110,6 +110,7 @@ function help()
    echo "-s, --start                Start the development server (from container)"
    echo "-i, --install-dependencies Install the dependencies of the project (from container)"
    echo "-S                         Install the dependencies and start the development server (from container)"
+   echo "-t  --test                 Run the test suites (from container)"
    echo
    echo "                           [without arguments] Build image if not exists and run with port bridge." 
 }
@@ -163,6 +164,10 @@ case $1 in
   ;;
   -S)
     npm install && npm start
+    exit 0
+  ;;
+  --test|-t)
+    npm test
     exit 0
   ;;
   *)
