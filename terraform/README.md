@@ -19,6 +19,12 @@ project_name = "react-issues"
 website_zone = "elvisgastelum.com."
 ```
 
+To init the terraform project
+```bash
+cli-tools --terraform-init
+```
+![image](https://user-images.githubusercontent.com/43228550/93279251-aafd8180-f77b-11ea-989d-9d176ceb266d.png)
+
 To create terraform plan
 ```bash
 cli-tools --terraform-plan
@@ -30,3 +36,4 @@ To apply the terraform plan
 cli-tools --terraform-apply
 ```
 ![image](https://user-images.githubusercontent.com/43228550/93243388-fa708d00-f73c-11ea-9bd0-5feda81201e6.png)
+
